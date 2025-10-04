@@ -11,6 +11,11 @@ The Streamlit dashboard provides full visibility into the workflow — showing l
 
 ---
 
+## 📸 Demo  
+
+
+---
+
 ## 🧠 Agent Roles
 | Agent | Role | Description |
 |-------|------|-------------|
