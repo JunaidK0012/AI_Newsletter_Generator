@@ -1,0 +1,13 @@
+streamlit
+langchain
+langgraph
+langchain-google-genai
+python-dotenv
+langchain_tavily
+langchain_community
+arxiv
+langgraph_supervisor
+wikipedia
+youtube_search
+youtube-transcript-api
+langgraph-checkpoint-sqlite

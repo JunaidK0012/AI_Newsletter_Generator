@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weekly Newsletter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 22px;
+            margin-top: 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid;
+        }
+        .big-story h2 { border-color: #0073e6; color: #0073e6; }
+        .quick-updates h2 { border-color: #1DB954; color: #1DB954; }
+        .research-papers h2 { border-color: #8A2BE2; color: #8A2BE2; }
+        .github-repos h2 { border-color: #FF4500; color: #FF4500; }
+        .ai-products h2 { border-color: #008080; color: #008080; }
+
+        .card {
+            background-color: #f9f9f9;
+            border-left: 4px solid;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .big-story .card { border-left-color: #0073e6; }
+        .quick-updates ul { list-style-type: none; padding-left: 0; }
+        .quick-updates li { background-color: #f9f9f9; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        
+        .paper-card, .product-card {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .closing-note {
+            font-style: italic;
+            text-align: center;
+            color: #555;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #dddddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <table class="container" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+            <td>
+                <div class="header">
+                    <h1>AI Weekly</h1>
+                    <p>This Week's Edition</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <!-- Intro -->
+                <p>Welcome to this week's edition of <strong>AI Weekly</strong>, your go-to roundup of the most important developments in artificial intelligence. This week, we cover significant strides in AI safety and user control, the integration of powerful models into everyday tools, and a look at the latest in multilingual AI research.</p>
+                
+                <hr>
+
+                <!-- Big Story -->
+                <div class="section big-story">
+                    <h2>🌟 Big Story of the Week</h2>
+                    <div class="card">
+                        <h3>OpenAI Introduces Parental Controls for ChatGPT Following Teen Safety Concerns</h3>
+                        <p>In a significant move for AI safety, OpenAI has rolled out parental controls for ChatGPT. This feature allows parents to better manage and monitor their teens' interactions with the AI. The update follows growing concerns about the potential impact of AI on younger users and aims to provide a safer environment for exploration and learning. This development is likely to set a new standard for other AI companies, pushing the industry to prioritize user safety, especially for minors.</p>
+                        <a href="https://www.shrm.org/topics-tools/flagships/ai-hi/quick-hits-october-6" target="_blank">Read the source</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Quick Updates -->
+                <div class="section quick-updates">
+                    <h2>⚡ Quick Updates</h2>
+                    <ul>
+                        <li>
+                            <strong>Google Integrates Gemini into Chrome with 10 New AI Features</strong><br>
+                            Google is embedding its Gemini AI model directly into the Chrome browser, introducing ten new features designed to enhance productivity and user experience, including AI-powered tab organization and writing assistance. 
+                            <a href="https://www.forbes.com/sites/quickerbettertech/2025/09/28/this-week-in-small-business-technology-news-google-microsoft-add-new-ai-features-to-chrome-and-teams/" target="_blank">Source</a>
+                        </li>
+                        <li>
+                            <strong>Microsoft Diversifies AI Models in 365 Copilot with Anthropic Integration</strong><br>
+                            Microsoft has announced the integration of Anthropic's AI models, including Claude Sonnet 4 and Opus 4.1, into its Microsoft 365 Copilot, providing users with alternatives to OpenAI's models. 
+                            <a href="https://ts2.tech/en/billion-dollar-ai-bets-and-biotech-breakthroughs-top-tech-news-sept-27-28-2025/" target="_blank">Source</a>
+                        </li>
+                        <li>
+                            <strong>Brazilian Authorities Dismantle Deepfake-Powered Scam Ring</strong><br>
+                            A sophisticated scam ring in Brazil using AI-generated deepfake videos of celebrities to promote fraudulent products has been dismantled, highlighting the growing threat of AI misuse. 
+                            <a href="https://ts2.tech/en/ai-bubble-alarms-pixel-10-launch-beer-shortages-tech-news-roundup-oct-3-4-2025/" target="_blank">Source</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- Research Papers -->
+                <div class="section research-papers">
+                    <h2>📑 Top Research Papers</h2>
+                    <div class="paper-card">
+                        <strong>Goldfish: Monolingual Language Models for 350 Languages</strong><br>
+                        This paper introduces Goldfish, a suite of monolingual models for 350 languages, many of which are low-resource. These smaller models often outperform large multilingual models, which could significantly impact NLP research for underserved languages.
+                        <a href="http://arxiv.org/pdf/2408.10441v1" target="_blank">Download PDF</a>
+                    </div>
+                    <div class="paper-card">
+                        <strong>Lost in Translation: Large Language Models in Non-English Content Analysis</strong><br>
+                        This paper explores the limitations of LLMs in non-English contexts, highlighting the data gap and providing recommendations for more equitable multilingual systems.
+                        <a href="http://arxiv.org/pdf/2306.07377v1" target="_blank">Download PDF</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- GitHub Repos -->
+                <div class="section github-repos">
+                    <h2>💻 Top GitHub Repos of the Week</h2>
+                    <p>[Placeholder] – Unable to retrieve specific trending repositories with star counts for the past week.</p>
+                </div>
+                
+                <hr>
+
+                <!-- AI Products -->
+                <div class="section ai-products">
+                    <h2>🛠️ Top AI Products of the Week</h2>
+                    <div class="product-card">
+                        <strong>Clarm the AI DevRel Engineer</strong> (1021 Upvotes)<br>
+                        AI-powered developer relations engineer. 
+                        <a href="https://www.producthunt.com/products/clarm-ai-technical-support" target="_blank">Product Hunt Link</a>
+                    </div>
+                    <div class="product-card">
+                        <strong>V-CORTX™</strong> (876 Upvotes)<br>
+                        AI implementation software system. 
+                        <a href="http://www.trendhunter.com/trends/oxipital-ai1" target="_blank">Product Hunt Link</a>
+                    </div>
+                    <div class="product-card">
+                        <strong>Replit.new</strong> (754 Upvotes)<br>
+                        Low-code AI development platform. 
+                        <a href="https://www.linkedin.com/posts/mrsskonline_producthunt-tech-ai-activity-7377728652861407232-oHu5" target="_blank">Product Hunt Link</a>
+                    </div>
+                </div>
+
+                <!-- Closing Note -->
+                <div class="closing-note">
+                    <p>Thanks for tuning in to this week's edition of <strong>AI Weekly</strong>!</p>
+                    <p>AI is moving at lightning speed, but remember—it’s not just about keeping up with the latest headlines. It’s about <strong>understanding, experimenting, and building</strong>.</p>
+                    <p>Until next week, stay curious and keep creating.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
