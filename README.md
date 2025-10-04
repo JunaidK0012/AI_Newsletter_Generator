@@ -13,6 +13,7 @@ The Streamlit dashboard provides full visibility into the workflow — showing l
 
 ## 📸 Demo  
 
+https://github.com/user-attachments/assets/4907b5bc-d1ad-4d0f-8961-05fc7d1b666d
 
 ---
 
