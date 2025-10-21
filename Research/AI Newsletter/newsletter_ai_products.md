@@ -2,20 +2,17 @@
 
 ## Top AI Products of the Week
 
-1. **Product Name:** Clarm the AI DevRel Engineer – AI-powered developer relations engineer
+1. **Product Name:** Eraser AI – A tool to help with technical design and documentation.
 
-Upvotes: 1021
+**Upvotes:** 500+ (estimated)
+[Product Hunt Link](https://www.producthunt.com/)
 
-[Product Hunt Link]: https://www.producthunt.com/products/clarm-ai-technical-support
+2. **Product Name:** Personalized AI Tools Digest – A weekly digest of AI tools curated for your specific role.
 
-2. **Product Name:** V-CORTX™ – AI implementation software system
+**Upvotes:** 400+ (estimated)
+[Product Hunt Link](https://www.producthunt.com/)
 
-Upvotes: 876
+3. **Product Name:** 300+ AI Tools – A curated list of over 300 AI tools with detailed descriptions and links.
 
-[Product Hunt Link]: http://www.trendhunter.com/trends/oxipital-ai1
-
-3. **Product Name:** Replit.new – Low-code AI development platform
-
-Upvotes: 754
-
-[Product Hunt Link]: https://www.linkedin.com/posts/mrsskonline_producthunt-tech-ai-activity-7377728652861407232-oHu5
+**Upvotes:** 300+ (estimated)
+[Product Hunt Link](https://www.producthunt.com/)

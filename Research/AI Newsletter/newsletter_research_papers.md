@@ -2,22 +2,32 @@
 
 ## Featured Research Papers
 
-1. **Name of the Paper**: Goldfish: Monolingual Language Models for 350 Languages
+1. **Name of the Paper**: Inductive or Deductive? Rethinking the Fundamental Reasoning Abilities of LLMs
 
 **Publisher:** arXiv
 
-**Description:** This paper introduces Goldfish, a suite of monolingual autoregressive Transformer language models for 350 languages, many of which are low-resource. The authors find that these smaller, monolingual models often outperform large multilingual models like BLOOM and XGLM in terms of perplexity for many languages. This suggests that for low-resource languages, focusing on monolingual training can be more effective for text generation tasks than relying on massive multilingual models.
+**Description:** This paper investigates the fundamental reasoning abilities of Large Language Models (LLMs), specifically differentiating between inductive and deductive reasoning. The authors propose a novel framework, SolverLearner, to isolate and evaluate the inductive reasoning capabilities of LLMs. Their findings suggest that while LLMs exhibit strong inductive reasoning, they tend to lack in deductive reasoning, particularly in tasks involving "counterfactual" reasoning.
 
-**Possible Impact:** The release of Goldfish models could significantly impact NLP research for low-resource languages. Researchers and developers working on applications for these languages will have access to high-quality monolingual models, which can serve as better baselines and starting points for fine-tuning. This could lead to improved performance in a variety of downstream tasks for languages that have been traditionally underserved by large language models.
+**Possible Impact:** This research could lead to a better understanding of the reasoning capabilities and limitations of LLMs, which could inform the development of more robust and reliable AI systems. It also highlights the need for more nuanced evaluation of LLM reasoning, moving beyond a single "reasoning" metric.
 
-**Download Link:** [http://arxiv.org/pdf/2408.10441v1](http://arxiv.org/pdf/2408.10441v1)
+**Download Link:** [http://arxiv.org/pdf/2408.00114v2](http://arxiv.org/pdf/2408.00114v2)
 
-2. **Name of the Paper**: Lost in Translation: Large Language Models in Non-English Content Analysis
+2. **Name of the Paper**: DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search
 
 **Publisher:** arXiv
 
-**Description:** This paper explores the capabilities and limitations of large language models (LLMs) when applied to non-English content analysis. It provides a technical explanation of multilingual language models, discusses the challenges of using them for content analysis, and offers recommendations for companies, researchers, and policymakers. The authors highlight the data gap between English and other languages and how this affects the performance of multilingual models.
+**Description:** This paper proposes a new approach called DOTS (Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search) to enhance the reasoning capabilities of LLMs. Instead of using static, predefined reasoning strategies, DOTS enables LLMs to dynamically choose the best reasoning "actions" for a given question. This is achieved by searching for the optimal sequence of reasoning steps for each question and then training the LLM to plan these trajectories for new questions.
 
-**Possible Impact:** This paper serves as a critical reminder of the English-centric nature of current AI development. It could influence researchers and developers to be more cautious when applying LLMs to non-English contexts and encourage the development of more equitable and effective multilingual systems. The recommendations could also guide policy decisions to ensure that AI technologies are beneficial for a global audience.
+**Possible Impact:** DOTS could lead to more efficient and effective reasoning in LLMs, as they would be able to adapt their reasoning process to the specific problem at hand. This could improve their performance on a wide range of reasoning tasks and make them more flexible and powerful problem-solvers.
 
-**Download Link:** [http://arxiv.org/pdf/2306.07377v1](http://arxiv.org/pdf/2306.07377v1)
+**Download Link:** [http://arxiv.org/pdf/2410.03864v2](http://arxiv.org/pdf/2410.03864v2)
+
+3. **Name of the Paper**: MultiNRC: A Challenging and Native Multilingual Reasoning Evaluation Benchmark for LLMs
+
+**Publisher:** arXiv
+
+**Description:** This paper introduces MultiNRC (Multilingual Native Reasoning Challenge), a new benchmark for evaluating the multilingual reasoning capabilities of LLMs. Unlike existing benchmarks that are often translated from English, MultiNRC consists of over 1,000 native, culturally-grounded reasoning questions in French, Spanish, and Chinese. The benchmark covers linguistic reasoning, wordplay, cultural reasoning, and math problems with cultural relevance.
+
+**Possible Impact:** MultiNRC provides a much-needed tool for assessing the true multilingual and multicultural reasoning abilities of LLMs. The results from this benchmark could highlight the current limitations of LLMs in these areas and drive the development of models that are more globally competent and culturally aware.
+
+**Download Link:** [http://arxiv.org/pdf/2507.17476v1](http://arxiv.org/pdf/2507.17476v1)

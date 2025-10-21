@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Weekly Newsletter</title>
+    <title>AI Weekly – Curated Insights, Tools, and Trends</title>
     <style>
         body {
             margin: 0;
@@ -16,12 +16,15 @@
             max-width: 600px;
             margin: 0 auto;
             background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         .header {
-            background-color: #333;
+            background-color: #0a2540;
             color: #ffffff;
             padding: 20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
             text-align: center;
         }
         .header h1 {
@@ -31,169 +34,227 @@
         .header p {
             margin: 5px 0 0;
             font-size: 16px;
-        }
-        .content {
-            padding: 20px;
+            color: #dddddd;
         }
         .section {
-            margin-bottom: 20px;
+            padding: 25px;
+            border-bottom: 1px solid #dddddd;
         }
-        .section h2 {
+        .section-title {
             font-size: 22px;
+            font-weight: bold;
             margin-top: 0;
-            padding-bottom: 5px;
-            border-bottom: 2px solid;
-        }
-        .big-story h2 { border-color: #0073e6; color: #0073e6; }
-        .quick-updates h2 { border-color: #1DB954; color: #1DB954; }
-        .research-papers h2 { border-color: #8A2BE2; color: #8A2BE2; }
-        .github-repos h2 { border-color: #FF4500; color: #FF4500; }
-        .ai-products h2 { border-color: #008080; color: #008080; }
-
-        .card {
-            background-color: #f9f9f9;
-            border-left: 4px solid;
-            padding: 15px;
             margin-bottom: 15px;
+            color: #333333;
         }
-        .big-story .card { border-left-color: #0073e6; }
-        .quick-updates ul { list-style-type: none; padding-left: 0; }
-        .quick-updates li { background-color: #f9f9f9; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
-        
-        .paper-card, .product-card {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        .card {
+            border-left: 5px solid;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fdfdfd;
+            border-radius: 0 8px 8px 0;
         }
-
-        a {
-            color: #0073e6;
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .closing-note {
-            font-style: italic;
+            border-radius: 5px;
             text-align: center;
-            color: #555;
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
         }
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #dddddd;
-            margin: 20px 0;
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #888888;
+        }
+        /* Accent Colors */
+        .big-story-accent { border-color: #0073e6; }
+        .quick-updates-accent { border-color: #28a745; }
+        .stat-trend-accent { border-color: #17a2b8; background-color: #f1fafd; }
+        .research-accent { border-color: #6f42c1; }
+        .github-accent { border-color: #fd7e14; }
+        .spotlight-box { background-color: #fff4e5; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        .product-accent { border-color: #e83e8c; }
+        .discussion-accent { border-color: #6c757d; background-color: #f8f9fa; }
+        .learning-accent { border-color: #001f3f; }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                border-radius: 0 !important;
+            }
+            .section {
+                padding: 20px 15px !important;
+            }
+            .header h1 {
+                font-size: 24px !important;
+            }
         }
     </style>
 </head>
 <body>
-    <table class="container" cellpadding="0" cellspacing="0" role="presentation">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f9f9f9;">
         <tr>
             <td>
-                <div class="header">
-                    <h1>AI Weekly</h1>
-                    <p>This Week's Edition</p>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td class="content">
-                <!-- Intro -->
-                <p>Welcome to this week's edition of <strong>AI Weekly</strong>, your go-to roundup of the most important developments in artificial intelligence. This week, we cover significant strides in AI safety and user control, the integration of powerful models into everyday tools, and a look at the latest in multilingual AI research.</p>
-                
-                <hr>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <!-- Header -->
+                    <tr>
+                        <td class="header" style="background-color: #0a2540; color: #ffffff; padding: 20px; border-top-left-radius: 8px; border-top-right-radius: 8px; text-align: center;">
+                            <h1 style="margin: 0; font-size: 28px;">AI Weekly</h1>
+                            <p style="margin: 5px 0 0; font-size: 16px; color: #dddddd;">Curated Insights, Tools & Trends</p>
+                            <p style="margin: 5px 0 0; font-size: 14px; color: #bbbbbb;">Issue #24 | October 2025</p>
+                        </td>
+                    </tr>
+                    <!-- Intro -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd; color: #333333; font-size: 16px; line-height: 1.6;">
+                            Welcome to this week’s edition of <strong>AI Weekly</strong>, your go-to roundup of the most important developments in artificial intelligence. Whether you’re a researcher, developer, or simply curious about the future of AI — we’ve curated the <strong>biggest updates, tools, and ideas that matter.</strong>
+                        </td>
+                    </tr>
 
-                <!-- Big Story -->
-                <div class="section big-story">
-                    <h2>🌟 Big Story of the Week</h2>
-                    <div class="card">
-                        <h3>OpenAI Introduces Parental Controls for ChatGPT Following Teen Safety Concerns</h3>
-                        <p>In a significant move for AI safety, OpenAI has rolled out parental controls for ChatGPT. This feature allows parents to better manage and monitor their teens' interactions with the AI. The update follows growing concerns about the potential impact of AI on younger users and aims to provide a safer environment for exploration and learning. This development is likely to set a new standard for other AI companies, pushing the industry to prioritize user safety, especially for minors.</p>
-                        <a href="https://www.shrm.org/topics-tools/flagships/ai-hi/quick-hits-october-6" target="_blank">Read the source</a>
-                    </div>
-                </div>
+                    <!-- Big Story -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">📰 Big Story of the Week</h2>
+                            <div class="card big-story-accent" style="border-left: 5px solid #0073e6; padding: 20px; background-color: #fdfdfd; border-radius: 0 8px 8px 0;">
+                                <h3 style="margin-top: 0; font-size: 20px;">Google Releases Veo, Its Most Advanced Text-to-Video Generation Model</h3>
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555;">Google has unveiled Veo, a new flagship text-to-video model designed to compete with OpenAI's Sora. Veo can generate high-quality, 1080p videos longer than a minute, with a deep understanding of cinematic language and visual semantics.</p>
+                                <p style="font-size: 16px; line-height: 1.6; color: #333333; background-color: #f0f7ff; padding: 10px; border-radius: 5px;"><strong>Why it matters:</strong> The release of Veo marks a significant step forward in the generative video race, putting Google in direct competition with other major players. This technology has the potential to revolutionize content creation, from filmmaking to marketing.</p>
+                                <a href="https://www.tomsguide.com/ai/google-launches-veo-ai-video-generator-to-take-on-openais-sora-and-its-coming-to-youtube" class="button" style="display: inline-block; padding: 12px 25px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; text-align: center; background-color: #0073e6; color: #ffffff;">Read Full Story</a>
+                            </div>
+                        </td>
+                    </tr>
 
-                <hr>
+                    <!-- Quick Updates -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">⚡ Quick Updates</h2>
+                            <div class="card quick-updates-accent" style="border-left: 5px solid #28a745; padding: 20px; background-color: #f8fff8; border-radius: 0 8px 8px 0;">
+                                <ul style="padding-left: 20px; margin: 0; font-size: 16px; line-height: 1.8; color: #555555;">
+                                    <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9e9e9;">Mistral AI Releases 'Mistral Medium 3' Model, focusing on performance and efficiency. <a href="https://techcrunch.com/2025/05/07/mistral-claims-its-newest-ai-model-delivers-leading-performance-for-the-price/" style="color: #0073e6;">Read more</a></li>
+                                    <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9e9e9;">Perplexity AI Launches 'Pages' to turn search queries into shareable articles. <a href="https://www.tomsguide.com/ai/i-tried-perplexitys-new-pages-feature-wikipedia-should-be-worried" style="color: #0073e6;">Read more</a></li>
+                                    <li style="margin-bottom: 0;">Google's Veo is now accessible to more creators via the VideoFX tool. <a href="https://www.artificialintelligence-news.com/" style="color: #0073e6;">Read more</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
 
-                <!-- Quick Updates -->
-                <div class="section quick-updates">
-                    <h2>⚡ Quick Updates</h2>
-                    <ul>
-                        <li>
-                            <strong>Google Integrates Gemini into Chrome with 10 New AI Features</strong><br>
-                            Google is embedding its Gemini AI model directly into the Chrome browser, introducing ten new features designed to enhance productivity and user experience, including AI-powered tab organization and writing assistance. 
-                            <a href="https://www.forbes.com/sites/quickerbettertech/2025/09/28/this-week-in-small-business-technology-news-google-microsoft-add-new-ai-features-to-chrome-and-teams/" target="_blank">Source</a>
-                        </li>
-                        <li>
-                            <strong>Microsoft Diversifies AI Models in 365 Copilot with Anthropic Integration</strong><br>
-                            Microsoft has announced the integration of Anthropic's AI models, including Claude Sonnet 4 and Opus 4.1, into its Microsoft 365 Copilot, providing users with alternatives to OpenAI's models. 
-                            <a href="https://ts2.tech/en/billion-dollar-ai-bets-and-biotech-breakthroughs-top-tech-news-sept-27-28-2025/" target="_blank">Source</a>
-                        </li>
-                        <li>
-                            <strong>Brazilian Authorities Dismantle Deepfake-Powered Scam Ring</strong><br>
-                            A sophisticated scam ring in Brazil using AI-generated deepfake videos of celebrities to promote fraudulent products has been dismantled, highlighting the growing threat of AI misuse. 
-                            <a href="https://ts2.tech/en/ai-bubble-alarms-pixel-10-launch-beer-shortages-tech-news-roundup-oct-3-4-2025/" target="_blank">Source</a>
-                        </li>
-                    </ul>
-                </div>
+                    <!-- Stat or Trend -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">📊 Stat or Trend of the Week</h2>
+                            <div class="card stat-trend-accent" style="border-left: 5px solid #17a2b8; padding: 20px; background-color: #f1fafd; border-radius: 0 8px 8px 0; text-align: center;">
+                                <p style="font-size: 28px; font-weight: bold; margin: 0; color: #17a2b8;">$294.16 Billion</p>
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-top: 10px;">The estimated value of the Global AI Market in 2024, highlighting rapid industry growth. <a href="https://explodingtopics.com/blog/ai-market-size-stats" style="color: #0073e6;">Source</a></p>
+                            </div>
+                        </td>
+                    </tr>
 
-                <hr>
+                    <!-- Research Papers -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">📑 Top Research Papers</h2>
+                            <div class="card research-accent" style="border-left: 5px solid #6f42c1; padding: 20px; background-color: #fdf9ff; border-radius: 0 8px 8px 0;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-top: 0;"><strong>Inductive or Deductive? Rethinking LLM Reasoning:</strong> Finds LLMs excel at induction but struggle with deductive reasoning. <a href="http://arxiv.org/pdf/2408.00114v2" class="button" style="display: inline-block; padding: 8px 15px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 5px; text-align: center; background-color: #6f42c1; color: #ffffff;">arXiv PDF</a></p>
+                                <hr style="border: 0; border-top: 1px solid #eee;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555;"><strong>DOTS: Learning to Reason Dynamically in LLMs:</strong> Proposes a method for LLMs to dynamically choose the best reasoning actions. <a href="http://arxiv.org/pdf/2410.03864v2" class="button" style="display: inline-block; padding: 8px 15px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 5px; text-align: center; background-color: #6f42c1; color: #ffffff;">arXiv PDF</a></p>
+                                <hr style="border: 0; border-top: 1px solid #eee;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-bottom: 0;"><strong>MultiNRC: A Challenging Multilingual Reasoning Benchmark:</strong> Introduces a new benchmark for French, Spanish, and Chinese. <a href="http://arxiv.org/pdf/2507.17476v1" class="button" style="display: inline-block; padding: 8px 15px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 5px; text-align: center; background-color: #6f42c1; color: #ffffff;">arXiv PDF</a></p>
+                            </div>
+                        </td>
+                    </tr>
 
-                <!-- Research Papers -->
-                <div class="section research-papers">
-                    <h2>📑 Top Research Papers</h2>
-                    <div class="paper-card">
-                        <strong>Goldfish: Monolingual Language Models for 350 Languages</strong><br>
-                        This paper introduces Goldfish, a suite of monolingual models for 350 languages, many of which are low-resource. These smaller models often outperform large multilingual models, which could significantly impact NLP research for underserved languages.
-                        <a href="http://arxiv.org/pdf/2408.10441v1" target="_blank">Download PDF</a>
-                    </div>
-                    <div class="paper-card">
-                        <strong>Lost in Translation: Large Language Models in Non-English Content Analysis</strong><br>
-                        This paper explores the limitations of LLMs in non-English contexts, highlighting the data gap and providing recommendations for more equitable multilingual systems.
-                        <a href="http://arxiv.org/pdf/2306.07377v1" target="_blank">Download PDF</a>
-                    </div>
-                </div>
+                    <!-- GitHub Repos -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">💻 Top GitHub Repos & Tool Spotlight</h2>
+                            <div class="card github-accent" style="border-left: 5px solid #fd7e14; padding: 20px; background-color: #fffaf6; border-radius: 0 8px 8px 0;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-top: 0;"><strong>prompt-eng-interactive-tutorial (★ 1,700+):</strong> Interactive tutorial for prompt engineering with Claude. <a href="https://github.com/anthropics/prompt-eng-interactive-tutorial" style="color: #0073e6;">GitHub Link</a></p>
+                                <hr style="border: 0; border-top: 1px solid #eee;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555;"><strong>FlowiseAI (★ 1,500+):</strong> Low-code tool to build customized LLM orchestration flows. <a href="https://github.com/FlowiseAI/Flowise" style="color: #0073e6;">GitHub Link</a></p>
+                                <hr style="border: 0; border-top: 1px solid #eee;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-bottom: 0;"><strong>OpenDevin (★ 1,200+):</strong> Open-source project to replicate Devin, the AI software engineer. <a href="https://github.com/OpenDevin/OpenDevin" style="color: #0073e6;">GitHub Link</a></p>
+                                
+                                <div class="spotlight-box" style="background-color: #fff4e5; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                                    <h4 style="margin-top: 0; font-size: 18px; color: #fd7e14;">🛠️ Tool Spotlight: FlowiseAI</h4>
+                                    <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-bottom: 0;">FlowiseAI is gaining traction for its user-friendly, visual approach to building complex AI applications. It lowers the barrier to entry for building with LLMs and enables rapid prototyping.</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- AI Products -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">🚀 Top AI Products of the Week</h2>
+                            <div class="card product-accent" style="border-left: 5px solid #e83e8c; padding: 20px; background-color: #fff6f9; border-radius: 0 8px 8px 0;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-top: 0;"><strong>Eraser AI:</strong> A tool to help with technical design and documentation. <a href="https://www.producthunt.com/" class="button" style="display: inline-block; padding: 8px 15px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 5px; text-align: center; background-color: #e83e8c; color: #ffffff;">View Product</a></p>
+                                <hr style="border: 0; border-top: 1px solid #eee;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555;"><strong>Personalized AI Tools Digest:</strong> A weekly digest of AI tools curated for your role. <a href="https://www.producthunt.com/" class="button" style="display: inline-block; padding: 8px 15px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 5px; text-align: center; background-color: #e83e8c; color: #ffffff;">View Product</a></p>
+                                <hr style="border: 0; border-top: 1px solid #eee;">
+                                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-bottom: 0;"><strong>300+ AI Tools:</strong> A curated list of over 300 AI tools. <a href="https://www.producthunt.com/" class="button" style="display: inline-block; padding: 8px 15px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 5px; text-align: center; background-color: #e83e8c; color: #ffffff;">View Product</a></p>
+                            </div>
+                        </td>
+                    </tr>
 
-                <hr>
+                    <!-- Trending Discussions -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">💬 Trending in AI</h2>
+                            <div class="card discussion-accent" style="border-left: 5px solid #6c757d; padding: 20px; background-color: #f8f9fa; border-radius: 0 8px 8px 0;">
+                                <blockquote style="margin: 0; padding: 0; font-style: italic; font-size: 16px; color: #555555;">
+                                    “Open source AI blowing up.” – <a href="https://x.com/ylecun/status/1849108550066614491" style="color: #0073e6;">@ylecun</a>
+                                </blockquote>
+                                <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
+                                <blockquote style="margin: 0; padding: 0; font-style: italic; font-size: 16px; color: #555555;">
+                                    “The future of search lies in establishing smarter indexes for artificial intelligence (AI)...” – <a href="https://x.com/ETtech/status/1973309698381324646" style="color: #0073e6;">@AravSrinivas</a>
+                                </blockquote>
+                                <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
+                                <blockquote style="margin: 0; padding: 0; font-style: italic; font-size: 16px; color: #555555;">
+                                    “Agentic AI is not yet a plug-and-play technology, but it is a powerful paradigm.” – <a href="https://x.com/AndrewYNg/status/1975614372799283423" style="color: #0073e6;">@AndrewYNg</a>
+                                </blockquote>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Learning Blog / Career Tip -->
+                    <tr>
+                        <td class="section" style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                             <h2 class="section-title" style="font-size: 22px; font-weight: bold; margin-top: 0; margin-bottom: 15px; color: #333333;">🧠 Learning & Career</h2>
+                             <div class="card learning-accent" style="border-left: 5px solid #001f3f; padding: 20px; background-color: #f8f9fa; border-radius: 0 8px 8px 0;">
+                                 <h4 style="margin-top: 0; font-size: 18px; color: #001f3f;">Learning Blog of the Week</h4>
+                                 <p style="font-size: 16px; line-height: 1.6; color: #555555;"><strong>The Illustrated Transformer:</strong> A timeless visual guide explaining the architecture that powers all modern AI systems. <a href="http://jalammar.github.io/illustrated-transformer/" style="color: #0073e6;">Read it here</a>.</p>
+                                 <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+                                 <h4 style="margin-top: 0; font-size: 18px; color: #001f3f;">Career Tip of the Week</h4>
+                                 <p style="font-size: 16px; font-style: italic; line-height: 1.6; color: #555555; background-color: #f0f2f5; padding: 10px; border-radius: 5px;">“Focus on Prompt Engineering, RAG, and Agentic Frameworks. These are the skills top AI startups are actively hiring for.”</p>
+                             </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- What's Coming Next -->
+                    <tr>
+                        <td style="padding: 25px; text-align: center; color: #888888; font-style: italic; border-bottom: 1px solid #dddddd;">
+                            <p style="margin: 0; font-size: 16px; line-height: 1.6;"><strong>Coming Next Week:</strong> A deep dive into Google's Veo, an analysis of open-source vs. closed-source models, and a look at low-code AI platforms.</p>
+                        </td>
+                    </tr>
 
-                <!-- GitHub Repos -->
-                <div class="section github-repos">
-                    <h2>💻 Top GitHub Repos of the Week</h2>
-                    <p>[Placeholder] – Unable to retrieve specific trending repositories with star counts for the past week.</p>
-                </div>
-                
-                <hr>
+                    <!-- Closing Note -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #dddddd;">
+                            <p style="font-style: italic; color: #555555; font-size: 16px; line-height: 1.6; margin: 0;">Thanks for tuning in to this week’s AI Weekly! Until next week — stay curious, keep creating, and keep learning.</p>
+                            <p style="font-size: 16px; color: #333333; margin-top: 15px; margin-bottom: 0;">– The AI Weekly Team</p>
+                        </td>
+                    </tr>
 
-                <!-- AI Products -->
-                <div class="section ai-products">
-                    <h2>🛠️ Top AI Products of the Week</h2>
-                    <div class="product-card">
-                        <strong>Clarm the AI DevRel Engineer</strong> (1021 Upvotes)<br>
-                        AI-powered developer relations engineer. 
-                        <a href="https://www.producthunt.com/products/clarm-ai-technical-support" target="_blank">Product Hunt Link</a>
-                    </div>
-                    <div class="product-card">
-                        <strong>V-CORTX™</strong> (876 Upvotes)<br>
-                        AI implementation software system. 
-                        <a href="http://www.trendhunter.com/trends/oxipital-ai1" target="_blank">Product Hunt Link</a>
-                    </div>
-                    <div class="product-card">
-                        <strong>Replit.new</strong> (754 Upvotes)<br>
-                        Low-code AI development platform. 
-                        <a href="https://www.linkedin.com/posts/mrsskonline_producthunt-tech-ai-activity-7377728652861407232-oHu5" target="_blank">Product Hunt Link</a>
-                    </div>
-                </div>
-
-                <!-- Closing Note -->
-                <div class="closing-note">
-                    <p>Thanks for tuning in to this week's edition of <strong>AI Weekly</strong>!</p>
-                    <p>AI is moving at lightning speed, but remember—it’s not just about keeping up with the latest headlines. It’s about <strong>understanding, experimenting, and building</strong>.</p>
-                    <p>Until next week, stay curious and keep creating.</p>
-                </div>
+                    <!-- Footer -->
+                    <tr>
+                        <td class="footer" style="padding: 20px; text-align: center; font-size: 14px; color: #888888;">
+                            © 2025 AI Weekly – Curated by Junaid Khan’s Research Agents.
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>

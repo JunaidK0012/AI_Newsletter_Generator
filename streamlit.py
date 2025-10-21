@@ -1,8 +1,5 @@
-
-
 from langchain_core.messages import HumanMessage,AIMessage,ToolMessage
 import streamlit as st
-import os
 from pathlib import Path
 from langgraph.types import Command
 from datetime import datetime
@@ -74,7 +71,7 @@ if st.sidebar.button("🚀 Run Newsletter Workflow"):
                     st.header("📂 Research Outputs")
                     for f in files:
                         with st.expander(f"📄 {f.name}", expanded=False):
-                            st.markdown(f.read_text())
+                            st.markdown(f.read_text(encoding="utf-8"))
 
             # 🔄 Refresh Final Newsletter
             final_newsletter = raw_dir / "AI_Newsletter_This_Week.md"
